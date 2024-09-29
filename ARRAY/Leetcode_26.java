@@ -15,14 +15,28 @@ import java.util.Set;
 //It does not matter what you leave beyond the returned k (hence they are underscores).
 public class Leetcode_26 {
     public static void main(String[] args) {
-        int[] nums = {1,1,4,4,6,6,6,7,8,9};
+        int[] nums = {1,1,2,2,3,5};
         removeDuplicate(nums);
+        System.out.println(Arrays.toString(nums));
     }
+//static  void removeDuplicate(int[] arr){
+//
+//        //insert the element int o set
+//    Set<Integer> set = new HashSet<>();
+//    for (int i = 0; i < arr.length; i++) {
+//        set.add(arr[i]);
+//    }
+//int index = 0 ;
+//    for (int elem : set) {
+//        arr[index++] = elem;
+//    }
+//
+//}
 
     static  void  removeDuplicate(int[] arr) {
         int i = 0 ;
         for (int j = i+1; j < arr.length; j++) {
-            if ( arr[i] < arr[j]){
+            if ( arr[i] != arr[j]){
                 arr[i+1] = arr[j];
                 i++;
             }
