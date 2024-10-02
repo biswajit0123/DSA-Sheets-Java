@@ -30,7 +30,7 @@ public class Leetcode_26 {
 //    for (int elem : set) {
 //        arr[index++] = elem;
 //    }
-//
+// sout(index+1);
 //}
 
     static  void  removeDuplicate(int[] arr) {
@@ -41,7 +41,7 @@ public class Leetcode_26 {
                 i++;
             }
         }
-        System.out.println(Arrays.toString(arr));
-        System.out.println(i-1);
+       // System.out.println(Arrays.toString(arr));
+        System.out.println(i+1);
     }
 }
