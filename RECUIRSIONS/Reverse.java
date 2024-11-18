@@ -1,0 +1,19 @@
+public class Reverse {
+   static int x = 0;
+    public static void main(String[] args) {
+     rev(1234);
+        System.out.println(x);
+    }
+
+    static  void rev(int n){
+
+       if (n == 0){
+           return;
+       }
+            int rem = n % 10;
+            x = x * 10 + rem;
+            rev(n / 10);
+
+
+    }
+}
